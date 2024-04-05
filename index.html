@@ -34,6 +34,11 @@
          function
             let selectedBuku = document.getElementById("buku").value;
             let jumlah = parseInt(document.getElementById("jumlah").value);
+
+            if (isNaN(jumlah) || jumlah <=0) {
+                alert("Masukkan jumlah buku yang valid.");
+                return;
+            }
     </script>
 </body>
 </html>
