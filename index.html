@@ -39,6 +39,13 @@
                 alert("Masukkan jumlah buku yang valid.");
                 return;
             }
+
+             let found = false;
+            for (let i = 0; i< buku.length; i++) {
+                if (buku[i].nama === selectedBuku) {
+                    found = true ;
+                    if (jumlah > buku[i].jumlah) {
+                        alert("Jumlah buku tidak tersedia.");
     </script>
 </body>
 </html>
